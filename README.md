@@ -1,4 +1,4 @@
-# ADO Sql Shop
+# ADO Shop:department_store:
 ## Home work 17.08
 > * Спроєктувати принаймні одну таблицю, скласти для неї 
 > * SQL запит створення та заповнення тестовими даними
@@ -136,3 +136,4 @@ private void LoadBrandsCountry()
 ```
 [![photo-2023-08-22-17-41-43.jpg](https://i.postimg.cc/7PnydSXq/photo-2023-08-22-17-41-43.jpg)](https://postimg.cc/5jyGFYZr)
 [![photo-2023-08-22-17-42-32.jpg](https://i.postimg.cc/CLMVgd6k/photo-2023-08-22-17-42-32.jpg)](https://postimg.cc/0r44G5vy)
+----
