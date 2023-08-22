@@ -1,0 +1,63 @@
+﻿<Window x:Class="AdoSqlBrands.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AdoSqlBrands"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Closed="Window_Closed"
+        Title="Shop db" Height="450" Width="800">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel 
+            Orientation="Vertical"
+            HorizontalAlignment="Left"
+            Width="200">
+            <Button
+                Margin="10 5"
+                x:Name="CreateTableBrands"
+                Click="CreateTableBrands_Click">
+                CREATE TABLE BRANDS
+            </Button>
+            <Button
+                x:Name="InsertBrandsData"
+                Click="InsertBrandsData_Click"
+                Margin="10 5">
+                INSERT BRANDS DATA
+            </Button>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical"
+                    Grid.Row="1" Grid.Column="0">
+
+            <Label Content="Shop Brands"/>
+
+            <ListView ItemsSource="{Binding brandsColumns}">
+
+            </ListView>
+
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical"
+                    Grid.Row="1" Grid.Column="1">
+
+            <Label Content="Brands Country"/>
+
+            <ListView ItemsSource="{Binding countryColumns}">
+
+            </ListView>
+
+        </StackPanel>
+    </Grid>
+</Window>
