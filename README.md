@@ -79,9 +79,6 @@ private void InsertBrandsData_Click(object sender, RoutedEventArgs e)
 }
 ```
 > [![photo-2023-08-22-17-27-29.jpg](https://i.postimg.cc/g08J1nn8/photo-2023-08-22-17-27-29.jpg)](https://postimg.cc/hJ4cd48t)
-> [![photo-2023-08-22-18-18-34.jpg](https://i.postimg.cc/Wb55CwKL/photo-2023-08-22-18-18-34.jpg)](https://postimg.cc/xcbGbMnt)
-> [![photo-2023-08-22-18-19-25.jpg](https://i.postimg.cc/PrDqFSNN/photo-2023-08-22-18-19-25.jpg)](https://postimg.cc/PPthCzWk)
-> [![photo-2023-08-22-18-21-36.jpg](https://i.postimg.cc/CL4KgzHV/photo-2023-08-22-18-21-36.jpg)](https://postimg.cc/9rr2PXnx)
 > [![photo-2023-08-22-17-30-23.jpg](https://i.postimg.cc/x84nX2X9/photo-2023-08-22-17-30-23.jpg)](https://postimg.cc/JHZ9FS3F)
 ----
 ## Home work 18.08
