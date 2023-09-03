@@ -137,3 +137,18 @@ private void LoadBrandsCountry()
 [![photo-2023-08-22-17-41-43.jpg](https://i.postimg.cc/7PnydSXq/photo-2023-08-22-17-41-43.jpg)](https://postimg.cc/5jyGFYZr)
 [![photo-2023-08-22-17-42-32.jpg](https://i.postimg.cc/CLMVgd6k/photo-2023-08-22-17-42-32.jpg)](https://postimg.cc/0r44G5vy)
 ----
+## Home work 22.08
+> * Зазначити для якоїсь групи товарів "видалення" (дату у полі DeleteDt)
+> * Модифікувати запит у головному вікні з метою "фільтрування" видалених груп (показує тільки невидалені)
+```cs
+Brand.Add(new()
+{
+    Name = reader.GetString(0),
+    Website = reader.GetString(1),
+});
+```
+```cs
+command.CommandText = "SELECT name, website FROM Brands WHERE DeleteDt IS NULL";
+```
+[![photo-2023-09-03-15-57-45.jpg](https://i.postimg.cc/2jHWhg77/photo-2023-09-03-15-57-45.jpg)](https://postimg.cc/8s6sVK37)
+----
