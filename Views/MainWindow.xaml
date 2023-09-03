@@ -43,8 +43,18 @@
 
             <Label Content="Shop Brands"/>
 
-            <ListView ItemsSource="{Binding brandsColumns}">
+            <ListView ItemsSource="{Binding Brands}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn 
+                            Header="Id" Width="50"
+                            DisplayMemberBinding="{Binding Path=id}"/>
+                        <GridViewColumn 
+                            Header="Name" 
+                            DisplayMemberBinding="{Binding Path=name}"/>
 
+                    </GridView>
+                </ListView.View>
             </ListView>
 
         </StackPanel>

@@ -23,8 +23,11 @@ namespace AdoSqlBrands
     public partial class MainWindow : Window
     {
         private SqlConnection connection;
+
         public ObservableCollection<String> brandsColumns { get; set; } = new();
         public ObservableCollection<String> countryColumns { get; set; } = new();
+
+        public ObservableCollection<DAL.Entity.Brands> Brands { get; set; } = new();
 
         public MainWindow()
         {
@@ -60,9 +63,14 @@ namespace AdoSqlBrands
 
                 while (reader.Read())
                 {
-                    brandsColumns.Add(
+                    /*brandsColumns.Add(
     $"Title: {reader.GetString(0)}, {reader.GetString(1)}"
-);
+);*/
+                    Brands.Add(new()
+                    {
+                        id = reader.GetGuid(0),
+                        name = reader.GetString(1),
+                    });
                 }
             }
             catch (Exception ex)
