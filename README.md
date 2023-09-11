@@ -147,8 +147,27 @@ Brand.Add(new()
     Website = reader.GetString(1),
 });
 ```
+## Home work 24.08
+> * Реалізувати перевірку введених даних щодо оновлення на валідність (пустоту, відповідність форматам)
+> * ** Відстежувати зміни - якщо реальних змін не було, то деактивувати кнопку "збереження"
 ```cs
-command.CommandText = "SELECT name, website FROM Brands WHERE DeleteDt IS NULL";
+private void Window_Loaded(object sender, RoutedEventArgs e)
+{
+    Name.Text = Brands?.Name.ToString() ?? "";
+    Description.Text = Brands?.Description.ToString() ?? "";
+    Website.Text = Brands?.Website.ToString() ?? "";
+    Date.Text = Brands?.Founded_date.ToString() ?? "";
+}
 ```
-[![photo-2023-09-03-15-57-45.jpg](https://i.postimg.cc/2jHWhg77/photo-2023-09-03-15-57-45.jpg)](https://postimg.cc/8s6sVK37)
+```cs
+private void Description_TextChanged(object sender, TextChangedEventArgs e)
+{
+    if (Description.Text != Brands?.Description.ToString())
+        SaveButton.IsEnabled = true;
+    else
+        SaveButton.IsEnabled = false;
+}
+```
+[![1.jpg](https://i.postimg.cc/QtGwS0hK/1.jpg)](https://postimg.cc/xk561Gk9)
+[![2.jpg](https://i.postimg.cc/HL5PJXXY/2.jpg)](https://postimg.cc/sBjJqBTq)
 ----
